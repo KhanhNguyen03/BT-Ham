@@ -6,14 +6,16 @@
 </head>
 <body>
 <script>
-    function b4(x){
+    // Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào.
+    // Gọi hàm vừa xây dựng được
+    function getFactorial(x){
         let gt = 1;
-        for (let i = 1; i <= x; i++) {
+        for (let i = x; i > 0; i--) {
             gt= gt * i;
         }
         return gt;
     }
-    alert(b4(5));
+    alert(getFactorial(6));
 </script>
 </body>
 </html>

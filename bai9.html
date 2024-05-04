@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm nhận vào 1 mảng, trả TBC các số > 10.
+    // (Phải dùng các hàm đã tạo ở bài 6 và 7)
+    let arr=[];
+    let soluongphantu=+prompt('Nhập số lượng ptu mảng');
+    for (let i = 0; i < soluongphantu; i++) {
+        let ptu =+prompt('Nhập phần tử thứ '+i);
+        arr.push(ptu);
+    }
+
+    function getCount(arr){
+        let dem =0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>10){
+                dem++;
+            }
+        }
+        return dem ;
+
+    }
+    function getSum(arr){
+        let sum =0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>10) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+
+    }
+    function getAvg(arr){
+        let avg= getSum(arr)/getCount(arr);
+        return avg;
+
+    }
+    alert(getAvg(arr))
+</script>
+</body>
+</html>

@@ -6,17 +6,19 @@
 </head>
 <body>
 <script>
-    function b3(r){
+//    Viết hàm trả về giai thừa của một số nguyên bất kỳ được đưa vào.
+//        Gọi hàm vừa xây dựng được.
+       function getChuvi(r){
         let cv= 2 *r *3.14;
         return cv;
 
     }
-    function dt (r){
-       let dientich = r * r * 3.14;
+    function getDienTich (r){
+       let dientich = Math.pow(r,2) * 3.14;
         return dientich;
     }
-    alert(b3(4));
-    alert(dt(4));
+    alert(getChuvi(4));
+    alert(getDienTich(10));
 </script>
 
 </body>

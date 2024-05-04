@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết hàm nhận vào 1 mảng, trả về tổng các số > 10
+
+    function getSum(arr){
+        let sum =0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i]>10) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+
+    }
+    let arr=[];
+    let soluongphantu=+prompt('Nhập số lượng ptu mảng');
+    for (let i = 0; i < soluongphantu; i++) {
+        let ptu =+prompt('Nhập phần tử thứ '+i);
+        arr.push(ptu);
+    }
+
+    alert(getSum(arr));
+</script>
+</body>
+</html>

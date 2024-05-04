@@ -6,18 +6,17 @@
 </head>
 <body>
 <script>
-    let arr=[
-        1,2,3,4
-    ];
-    let tong =0;
-    function b6(arr){
-        for (let i = 0; i < arr.length; i++) {
-            tong += arr[i];
-            if (tong > 10){
-                return tong;
-            }
+    // Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+    //     Nếu là nguyên dương trả về true, ngược lại trả về false.
+    function check(number){
+        if (number >0 ){
+            return true;
+        }else{
+            return false;
         }
+
     }
+    alert(check(-10));
 </script>
 
 </body>
